@@ -22,3 +22,13 @@ The 5G Core system is implemented using the Open5GS, an open source implementati
 
 ## UERANSIM
 UERANSIM is an open source 5G UE & 5G RAN(gNodeB) implementation. It can be considered as a 5G mobile phone and a base station in basic terms. There are 3 main interface in UE/RAN perspective, 1) Control Interface (between RAN and AMF), 2) User Interface (between RAN and UPF), 3) Radio Interface (between UE and RAN)
+
+### Open5GS Installation
+```
+# install open5gs as daemon service
+sudo apt update
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:open5gs/latest
+sudo apt update
+sudo apt install open5gs
+```
