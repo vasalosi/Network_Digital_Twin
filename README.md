@@ -47,6 +47,6 @@ amf:
         - uri: http://127.0.0.200:7777
   ngap:
 server:
-<code style="color : darkorange">      - address: 10.160.101.188 </code>
+$${\color{red}Red}$$ - address: 10.160.101.188 
 <code style="color : darkorange">      - port: 38412 </code>
 ```
