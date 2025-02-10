@@ -46,7 +46,9 @@ amf:
       scp:
         - uri: http://127.0.0.200:7777
   ngap:
+```ruby
 server:
-$${\color{red} - address: 10.160.101.188 }$$
-<code style="color : darkorange">      - port: 38412 </code>
+ - address: 10.160.101.188 }
+ - port: 38412 
+```
 ```
