@@ -46,8 +46,9 @@ amf:
       scp:
         - uri: http://127.0.0.200:7777
   ngap:
-    server:
+<code style="color : darkorange">
+server:
       - address: 10.160.101.188
       - port: 38412
-
+</code>
 ```
