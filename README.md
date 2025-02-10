@@ -47,7 +47,7 @@ amf:
         - uri: http://127.0.0.200:7777
   ngap:
 server:
-- - address: 10.160.101.188 }
++ - address: 10.160.101.188 }
 + - port: 38412 
 ```
 
