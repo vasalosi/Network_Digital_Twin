@@ -4,7 +4,8 @@ Creating a 5G Network Digital Twin to be used for 6G development
 
 The 5G network consists of three main components: the User Equipment (UE), the 5G New Radio (gNodeB), and the core network (5GC)
 
-
+# Open5GS
+The 5G Core system is implemented using the Open5GS, an open source implementation of 5G mobile core network.
  The 5G Core System consists of the following network functions(NF). These functions are divided into two main planes: the control plane and the user plane.
 
 1. User plane Function (UPF)
