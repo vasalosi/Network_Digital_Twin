@@ -129,4 +129,4 @@ chmod +x open5gs-dbctl
 # Show all the subscribers available in the databse
 ./open5gs-dbctl showpretty
 ```
-
+### 4.Install UERANSIM
