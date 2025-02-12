@@ -22,8 +22,8 @@ The 5G Core system is implemented using the Open5GS, an open source implementati
 
 ## UERANSIM
 UERANSIM is an open source 5G UE & 5G RAN(gNodeB) implementation. It can be considered as a 5G mobile phone and a base station in basic terms. There are 3 main interface in UE/RAN perspective, 1) Control Interface (between RAN and AMF), 2) User Interface (between RAN and UPF), 3) Radio Interface (between UE and RAN)
-
-### Open5GS Installation
+##Configuration
+### 1.Open5GS Installation
 ```
 # install open5gs as daemon service
 sudo apt update
@@ -32,6 +32,7 @@ sudo add-apt-repository ppa:open5gs/latest
 sudo apt update
 sudo apt install open5gs
 ```
+### 2.Open5GS Set-UP
 Configure the NGAP bind address of the AMF(5G Core running server IP) and the GTPU bind address of the UPF(5G Core running server IP) in order for gNB and UE to be able to connect to 5G Core network. 
 After doing these configurationsm restart the AMF and UPF services.
 AMF(5G Core running server IP)
@@ -110,5 +111,6 @@ sudo tail -f /var/log/open5gs/upf.log
 02/12 10:57:46.541: [upf] INFO: PFCP associated [127.0.0.4]:8805 (../src/upf/pfcp-sm.c:184)
 ```
 
-
+### 3.Register UE devices
+   
 
