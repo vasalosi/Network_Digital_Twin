@@ -92,6 +92,22 @@ upf:
       - address: 127.0.0.7
         port: 9090
 
+# restart upf services
+sudo systemctl restart open5gs-upfd
+
+---
+
+# upf logs can be found in /var/log/open5gs/upf.log
+sudo tail -f /var/log/open5gs/upf.log
+
+02/12 10:57:43.915: [app] INFO: Configuration: '/etc/open5gs/upf.yaml' (../lib/app/ogs-init.c:133)
+02/12 10:57:43.915: [app] INFO: File Logging: '/var/log/open5gs/upf.log' (../lib/app/ogs-init.c:136)
+02/12 10:57:43.982: [metrics] INFO: metrics_server() [http://127.0.0.7]:9090 (../lib/metrics/prometheus/context.c:299)
+02/12 10:57:43.982: [pfcp] INFO: pfcp_server() [127.0.0.7]:8805 (../lib/pfcp/path.c:30)
+02/12 10:57:43.982: [gtp] INFO: gtp_server() [10.160.101.188]:2152 (../lib/gtp/path.c:30)
+02/12 10:57:43.983: [app] INFO: UPF initialize...done (../src/upf/app.c:31)
+02/12 10:57:46.539: [pfcp] INFO: ogs_pfcp_connect() [127.0.0.4]:8805 (../lib/pfcp/path.c:61)
+02/12 10:57:46.541: [upf] INFO: PFCP associated [127.0.0.4]:8805 (../src/upf/pfcp-sm.c:184)
 ```
 
 
