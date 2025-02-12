@@ -116,7 +116,6 @@ sudo tail -f /var/log/open5gs/upf.log
   
 
 ```
-
 # dbctl cli utility to register subscribers
 sudo wget https://github.com/open5gs/open5gs/blob/main/misc/db/open5gs-dbctl
 chmod +x open5gs-dbctl
@@ -129,6 +128,5 @@ chmod +x open5gs-dbctl
 ./open5gs-dbctl subscriber_status 999700000000001 subscriber_status_val=1
 # Show all the subscribers available in the databse
 ./open5gs-dbctl showpretty
-
 ```
 
