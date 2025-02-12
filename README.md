@@ -60,7 +60,6 @@ sudo systemctl restart open5gs-amfd
 
 # amf logs can be found in /var/log/open5gs/amf.log
 sudo tail -f /var/log/open5gs/amf.log
-```
 02/12 10:49:25.206: [app] INFO: Configuration: '/etc/open5gs/amf.yaml' (../lib/app/ogs-init.c:133)
 02/12 10:49:25.206: [app] INFO: File Logging: '/var/log/open5gs/amf.log' (../lib/app/ogs-init.c:136)
 02/12 10:49:25.211: [sbi] INFO: NF EndPoint(addr) setup [127.0.0.200:7777] (../lib/sbi/context.c:474)
@@ -69,4 +68,6 @@ sudo tail -f /var/log/open5gs/amf.log
 02/12 10:49:25.212: [sbi] INFO: nghttp2_server() [http://127.0.0.5]:7777 (../lib/sbi/nghttp2-server.c:424)
 02/12 10:49:25.212: [amf] INFO: ngap_server() [10.160.101.188]:38412 (../src/amf/ngap-sctp.c:61)
 02/12 10:49:25.213: [sctp] INFO: AMF initialize...done (../src/amf/app.c:33)
+```
+
 
