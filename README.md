@@ -35,6 +35,8 @@ sudo apt install open5gs
 Configure the NGAP bind address of the AMF(5G Core running server IP) and the GTPU bind address of the UPF(5G Core running server IP) in order for gNB and UE to be able to connect to 5G Core network. 
 After doing these configurationsm restart the AMF and UPF services.
 ```diff
+# amf config file locates in /etc/open5gs/amf.yaml
+# ngap addr configured to 5g core server ip (open5gs VM own IP address)
 amf:
   sbi:
     server:
