@@ -111,6 +111,22 @@ sudo tail -f /var/log/open5gs/upf.log
 02/12 10:57:46.541: [upf] INFO: PFCP associated [127.0.0.4]:8805 (../src/upf/pfcp-sm.c:184)
 ```
 
-### 3.Register UE devices
-   
+### 3. Register UE devices
+  UE Devices must be registered on open5gs database (normally open5gs operates a webui), however UEs can be manually  registered, removed etc...  using the open5gs-dbctl toolbox. All the available commands can be found in https://github.com/open5gs/open5gs/blob/main/misc/db/open5gs-dbctl 
+  
+
+```
+#download dbctl cli utility to insert imsi details
+sudo wget https://github.com/open5gs/open5gs/blob/main/misc/db/open5gs-dbctl
+chmod +x open5gs-dbctl
+# Add subscriberss with the following IMSIs 999700000000001 & 999700000000002
+./open5gs-dbctl add 999700000000001 465B5CE8B199B49FAA5F0A2EE238A6BC E8ED289DEBA952E4283B54E88E6183CA
+./open5gs-dbctl add 999700000000002 465B5CE8B199B49FAA5F0A2EE238A6BC E8ED289DEBA952E4283B54E88E6183CA
+# Remove subscriber with the following IMSI 999700000000002
+./open5gs-dbctl remove 999700000000002
+# Show the status of a subscriber with IMSI 999700000000001
+./open5gs-dbctl subscriber_status 999700000000001 subscriber_status_val=1
+# Show all the subscribers available in the databse
+./open5gs-dbctl showpretty
+```
 
